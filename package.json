@@ -7,11 +7,8 @@
   "main": "./lib/index.js",
   "module": "./lib/index.js",
   "scripts": {
-    "build:prod": "esbuild src/index.tsx --minify --outfile=lib/index.js",
-    "build:dev": "esbuild src/index.tsx --outfile=lib/index.js",
-    "build:ts": "tsc",
-    "watch": "npm run watch:ts",
-    "watch:ts": "npm run clear:lib && tsc -w"
+    "build": "tsc",
+    "watch": "tsc -w"
   },
   "dependencies": {
     "@types/prop-types": "^15.7.3",
@@ -28,7 +25,6 @@
     "@types/react": "^16.9.19",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
-    "esbuild": "^0.20.2",
     "eslint": "^7.29.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
