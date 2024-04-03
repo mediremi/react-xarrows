@@ -287,7 +287,7 @@ const Xarrow: React.FC<xarrowPropsType> = (props: xarrowPropsType) => {
                   from="0"
                   to="1"
                   begin={`indefinite`}
-                  repeatCount="0"
+                  repeatCount="1"
                   fill="freeze"
                 />
 
